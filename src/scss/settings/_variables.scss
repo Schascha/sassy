@@ -7,14 +7,9 @@ $base-line-height: 21px;
 $color-base: #fff;
 $color-text: #222;
 
-// Sizes
-$mobile: 480px;
-$tablet: 768px;
-$desk: 1024px;
-
 // MQ
 $mq-breakpoints: (
-    mobile:  320px,
-    tablet:  740px,
+    mobile: 320px,
+    tablet: 740px,
     desktop: 980px
 );

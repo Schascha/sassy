@@ -9,8 +9,4 @@
     @include mq(desktop) {
         @include fixed(left 0 right 0 top 0);
     }
-
-    @include mq($until: mobile) {
-        text-align: left;
-    }
 }

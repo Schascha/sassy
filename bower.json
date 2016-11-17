@@ -23,5 +23,5 @@
   "devDependencies": {
     "normalize-css": "^5.0.0",
     "sass-mq": "^3.3.1"
-  },
+  }
  }
