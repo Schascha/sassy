@@ -1,0 +1,27 @@
+{
+  "name": "sassy",
+  "version": "1.0.0",
+  "description": "Just some useful Scss stuff",
+  "main": "src/scss/main.scss",
+  "authors": [
+    "Sascha Künstler <sascha.kuenstler@moccu.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "bem"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "^5.0.0",
+    "sass-mq": "^3.3.1"
+  }
+}

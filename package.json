@@ -1,0 +1,35 @@
+{
+  "name": "sassy",
+  "version": "1.0.0",
+  "description": "Just some useful Scss stuff",
+  "homepage": "",
+  "authors": [
+    "Sascha Künstler <contact.schascha@gmail.com> (http://www.schaschaweb.de)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "bem"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "bower": "^1.8.0",
+    "grunt": "^1.0.1",
+    "grunt-bump": "^0.8.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.2.1",
+    "grunt-scss-lint": "0.3.8",
+    "jit-grunt": "^0.10.0",
+    "load-grunt-config": "^0.19.2",
+    "load-grunt-tasks": "^3.3.0"
+  },
+  "engines": {
+    "node": "*"
+  }
+}

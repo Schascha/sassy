@@ -1,0 +1,46 @@
+$mobile: 480px !default;
+$tablet: 768px !default;
+$desk: 1024px !default;
+
+$breakpoints: (
+    'mobile-down': 'screen and (max-width: #{em($mobile - 1px)})',
+    'mobile-up': 'screen and (min-width: #{em($mobile)})',
+    'tablet-only': 'screen and (min-width: #{em($mobile)}) and (max-width: #{em($tablet - 1px)})',
+    'tablet-down': 'screen and (max-width: #{em($tablet - 1px)})',
+    'tablet-up': 'screen and (min-width: #{em($tablet)})',
+    'desk-only': 'screen and (min-width: #{em($tablet)}) and (max-width: #{em($desk - 1px)})',
+    'desk-down': 'screen and (max-width: #{em($desk - 1px)})',
+    'desk-up': 'screen and (min-width: #{em($desk)})',
+    'retina': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)'
+) !default;
+
+@mixin breakpoint($mq) {
+    @each $breakpoint in $breakpoints {
+        $alias:     nth($breakpoint, 1);
+        $condition: nth($breakpoint, 2);
+
+        @if $mq == $alias and $condition {
+            @media #{$condition} {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin mq($min: false, $max: false) {
+    @if ($min) {
+        @if ($max and $max > $min) {
+             @media screen and (min-width: $min) and (max-width: $max) {
+                @content;
+            }
+        } @else {
+             @media screen and (min-width: $min) {
+                @content;
+            }
+        }
+    } @else if ($max) {
+         @media screen and (max-width: $max) {
+            @content;
+        }
+    }
+}
